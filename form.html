@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Input Checkbox</title>
+</head>
+<body>
+    <p>Form Input Data</p>
+    <FORM NAME="form_checkbox" METHOD="POST" ACTION="proses_checkbox.php" enctype="multipart/form-data">
+        <table>
+            <tr>
+                <td><label for="name">Nama:</label></td>
+                <td><input type="text" name="name" id="name"></td>
+            </tr>
+            <tr>
+                <td><label for="gender">Jenis Kelamin:</label></td>
+                <td>
+                    <input type="radio" name="gender" value="Pria"> Pria<br>
+                    <input type="radio" name="gender" value="Wanita"> Wanita
+                </td>
+            </tr>
+            <tr>
+                <td><label for="job">Pilih Pekerjaan:</label></td>
+                <td>
+                    <select name="job" id="job">
+                        <option value="">Pilih Pekerjaan</option>
+                        <option value="Programmer">Programmer</option>
+                        <option value="Designer">Designer</option>
+                        <option value="Marketing">Marketing</option>
+                        <option value="Manager">Manager</option>
+                        <option value="Dokter">Dokter</option>
+                        <option value="Guru">Guru</option>
+                        <option value="Lainnya">Lainnya</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label>Pilih Game yang disukai:</label></td>
+                <td>
+                    <input type="checkbox" name="game1" value="Dota 2"> Dota 2<br>
+                    <input type="checkbox" name="game2" value="Mobile Legend"> Mobile Legend<br>
+                    <input type="checkbox" name="game3" value="Counter Strike"> Counter Strike<br>
+                    <input type="checkbox" name="game4" value="Tidak Menyukai Game"> Tidak ada
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="file">Pilih File:</label></td>
+                <td><input type="file" name="file" id="file"></td>
+            </tr>
+            <tr>
+                <td><label for="address">Alamat:</label></td>
+                <td><textarea name="address" id="address" rows="4" cols="50"></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="submit" name="Pilih" value="Submit"></td>
+            </tr>
+        </table>
+    </FORM>
+</body>
+</html>
+
+<!-- Penerapan form -->

@@ -1,0 +1,36 @@
+[
+    {
+        "title": "Mengapa Web Design Itu Penting?",
+        "author": "Dicky Irawan",
+        "created_at": "2024-05-01 14:00:00",
+        "updated_at": "2024-05-01 16:00:00",
+        "content": "Desain web bukan hanya tentang tampilan visual, tetapi juga tentang bagaimana pengunjung berinteraksi dengan halaman web.",
+        "summary": "Artikel ini membahas mengapa desain web yang baik sangat penting untuk pengalaman pengguna dan keberhasilan situs web.",
+        "tags": [
+            "Web Design",
+            "UX",
+            "SEO",
+            "Responsive Design"
+        ],
+        "image": "img\/webDesign.avif",
+        "category": "Web Development",
+        "status": "published"
+    },
+    {
+        "title": "Program Lebih Cerdas: Bagaimana AI Membantu Mengatasi Tantangan Pemrograman",
+        "author": "Dicky Irawan",
+        "created_at": "2024-05-02 10:00:00",
+        "updated_at": "2024-05-02 12:00:00",
+        "content": "Dalam dunia pemrograman yang cepat berkembang, banyak tantangan yang harus dihadapi oleh para pengembang perangkat lunak. Dari penulisan kode hingga debugging, AI, seperti ChatGPT, dapat membantu para programmer untuk mengatasi tantangan-tantangan tersebut. Artikel ini membahas bagaimana AI dapat meningkatkan kualitas pemrograman dan memberikan solusi praktis dalam menyelesaikan masalah pengkodean yang kompleks.",
+        "summary": "AI dapat membantu pemrogram dalam menulis kode yang lebih efisien, melakukan debugging lebih cepat, dan merancang algoritma yang lebih optimal.",
+        "tags": [
+            "AI",
+            "Pemrograman",
+            "Machine Learning",
+            "Productivity"
+        ],
+        "image": "img\/ai_partner.avif",
+        "category": "Technology",
+        "status": "published"
+    }
+]

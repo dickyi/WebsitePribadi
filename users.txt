@@ -1,0 +1,11 @@
+username1,email1@example.com,password1
+username2,email2@example.com,password2
+admin,dickyirawan1r1@gmail.com,$2y$10$XbLZINZcmHjrZDhmYIKFhOTMvB37mE09vIDx8qMyVgDm6y6954zVK
+aaa,anitasary1971@gmail.com,$2y$10$uH8VXDwaLrfdA2Ql0NsQRe4qSVLghx3
+diki,irawandicky300@gmail.com,$2y$10$pAy31wpGkMMS8quZuRItS.It/Inf7uxJtgh2K9v76Cux8X0J8NId2
+Admin2,aisysyarahh@gmail.com,$2y$10$kl64GhdXBp/dnq31NOFKV.66bhixIA6bNuLZOmiN0TfzkcyQ3vdHW
+aas,dickyirawan793@gmail.com,$2y$10$Zu3nJ5K88N/ubjWw1rC3nuyYCMolGZCx/0zQCbLsfm1wQ9AG1OoLq
+dicky,dickyirawan379@gmail.com,$2y$10$FNt1.jba5QIYdFrx2uxTVeK3c5yQuSJHEv5nKVNdnj81XTmV2lVbm
+Anita1,anitasary402@gmail.com,$2y$10$IvUCOqDizVMrjNtKEV63SOwhuh848AjREXRn1iBoIb8Z1HF7lea6O
+admin3,dickyirawan3000@gmail.com,$2y$10$3UGVP60x01/4eD/V4dqLwOs4vyGe8kAeJ07V8nmmzRcOcHSIkS8Ie
+admin4,irawandicky@gmail.com,$2y$10$ql.3OBpmM54JW9vaKHxEoua5nBpn9KdilAgy/yb71iAAKh8/ojTB6

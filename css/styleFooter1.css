@@ -1,0 +1,62 @@
+/* Mengatur tinggi halaman agar footer selalu di bawah */
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Menjaga agar konten utama mengisi sisa ruang yang tersedia */
+.container {
+    flex: 1; /* Konten akan mengambil ruang yang tersedia, sisanya untuk footer */
+    padding-top: 20px;
+}
+
+/* Footer styling */
+#footer {
+    width: 100%;
+    text-align: center;
+    background-color: #f1f1f1; /* Warna latar belakang footer */
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+}
+
+/* Bagian social media dalam footer */
+#footer .social-media {
+    background-color: #d1d1d1; /* Warna abu-abu untuk social media */
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* Styling untuk ikon sosial media */
+#footer .btn-floating {
+    font-size: 1.5rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin: 0 10px;
+    width: 50px; /* Menentukan lebar ikon */
+    height: 50px; /* Menentukan tinggi ikon */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%; /* Membuat bentuk bulat */
+    text-align: center; /* Menjaga teks/icon tetap di tengah */
+}
+
+/* Hover effect untuk sosial media */
+#footer .btn-floating:hover {
+    transform: scale(1.1); /* Efek sedikit besar saat di-hover */
+}
+
+/* Footer Copyright */
+#footer .text-center {
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 10px;
+}
+
+/* Responsif untuk tampilan mobile */
+@media (max-width: 768px) {
+    #footer .btn-floating {
+        font-size: 1.25rem;
+    }
+}

@@ -1,0 +1,72 @@
+/* Contact Form */
+#contact {
+    background-color: #ffffff;
+    padding: 3rem;
+    border-radius: 15px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1); /* Bayangan yang lebih dramatis */
+    max-width: 700px; /* Membatasi lebar formulir */
+    margin: 0 auto; /* Menjaga formulir di tengah */
+    transition: all 0.3s ease-in-out;
+}
+
+#contact:hover {
+    box-shadow: 0px 12px 40px rgba(0, 0, 0, 0.2); /* Bayangan lebih besar saat hover */
+}
+
+#contact .form-group {
+    margin-bottom: 2rem; /* Menambah jarak antar form-group */
+}
+
+#contact label {
+    font-size: 1.1rem;
+    color: #495057; /* Warna label lebih gelap untuk kontras yang baik */
+    margin-bottom: 0.5rem;
+}
+
+#contact .form-control {
+    font-size: 1rem;
+    padding: 14px;
+    border-radius: 12px; /* Menambah kelengkungan pada input */
+    border: 1px solid #ddd;
+    width: 100%;
+    transition: all 0.3s ease;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#contact .form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0px 0px 8px rgba(0, 123, 255, 0.5); /* Efek fokus lebih jelas */
+    outline: none; /* Menghilangkan outline default saat input fokus */
+}
+
+#contact button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 14px 30px;
+    font-size: 1.2rem;
+    border-radius: 12px;
+    cursor: pointer;
+    width: 100%; /* Membuat tombol memenuhi lebar formulir */
+    transition: all 0.3s ease;
+}
+
+#contact button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    #contact {
+        padding: 2rem;
+    }
+
+    #contact button {
+        width: 100%; /* Tombol memenuhi lebar pada perangkat kecil */
+    }
+
+    #contact .form-control {
+        padding: 12px; /* Menyesuaikan padding input pada perangkat kecil */
+    }
+}

@@ -1,0 +1,129 @@
+/* Mengatur dasar untuk body dan container */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fc;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin-top: 0; /* Menghilangkan jarak atas */
+}
+
+/* Styling untuk header */
+header {
+    background-color: #ffffff;
+    border-bottom: 2px solid #ddd;
+    padding: 15px 0; /* Mengurangi padding atas dan bawah */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 0; /* Menghilangkan jarak bawah */
+}
+
+header .d-flex {
+    display: flex;
+    align-items: center; /* Memastikan logo dan teks rata tinggi */
+    justify-content: space-between;
+}
+/* Styling untuk logo */
+header img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: inline-block; /* Menjamin logo dan teks berada pada satu baris */
+    vertical-align: middle; /* Memastikan logo berada pada garis tengah */
+}
+/* Styling untuk judul */
+header h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #333;
+    margin-left: 15px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    display: inline-block;
+    vertical-align: middle; /* Pastikan judul berada pada posisi yang sama dengan logo */
+}
+
+
+header h1:hover {
+    color: #007bff;
+}
+
+/* Styling untuk navbar */
+ul.nav {
+    margin: 0; /* Mengurangi margin agar lebih rapat */
+    padding: 0; /* Mengurangi padding */
+}
+
+
+ul.nav li {
+    margin: 0 15px;
+}
+
+ul.nav li a {
+    color: #333;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Navbar item hover effect */
+ul.nav li a:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Dropdown styling */
+.login-btn {
+    position: absolute;
+    top: 15px; /* Mengurangi jarak atas */
+    right: 15px; /* Menjaga tombol tetap di kanan */
+}
+
+.dropdown-toggle {
+    background-color: #007bff;
+    border-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-toggle:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+/* Dropdown menu */
+.dropdown-menu {
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    ul.nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    ul.nav li {
+        margin-bottom: 10px;
+    }
+
+    .login-btn {
+        position: static;
+        margin-top: 20px;
+    }
+}

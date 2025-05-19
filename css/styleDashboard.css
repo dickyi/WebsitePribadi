@@ -1,0 +1,135 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f6f9;
+    margin: 0;
+}
+
+#layoutAdmin {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #343a40;
+    color: white;
+    padding-top: 20px;
+    position: fixed;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.sidebar a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px 20px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.sidebar a:hover {
+    background-color: #495057;
+}
+
+.content {
+    margin-left: 250px;
+    width: 100%;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.header {
+    background-color: #007bff;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    font-size: 24px;
+}
+
+.card-stat {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.card-stat h5 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.table-responsive {
+    margin-top: 20px;
+}
+
+.table {
+    width: 100%;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+}
+
+.table thead {
+    background-color: #007bff;
+    color: white;
+}
+
+.table th,
+.table td {
+    text-align: center;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+}
+
+.table th {
+    font-size: 16px;
+}
+
+.table td {
+    font-size: 14px;
+}
+
+.btn {
+    border-radius: 5px;
+}
+
+.btn-warning {
+    background-color: #ffc107;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.btn-warning:hover {
+    background-color: #e0a800;
+}
+
+@media (max-width: 768px) {
+    #layoutAdmin {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        position: relative;
+        height: auto;
+    }
+
+    .content {
+        margin-left: 0;
+    }
+
+    .card-stat {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .table th,
+    .table td {
+        font-size: 12px;
+    }
+}
+    

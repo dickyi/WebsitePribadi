@@ -1,0 +1,448 @@
+/* Skills section */
+#skills h2 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+#skills p {
+  color: #6c757d;
+  margin-bottom: 2rem;
+}
+#skills .card {
+  border: none;
+  border-radius: 1rem;
+  transition: transform .3s, box-shadow .3s;
+}
+#skills .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+
+
+/* Bagian Portfolio/Proyek Saya */
+#portfolio {
+    padding: 80px 0;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+#portfolio h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+#portfolio h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50%;
+    height: 3px;
+    background-color: #007bff;
+    border-radius: 2px;
+}
+
+#portfolio p {
+    font-size: 1.1rem;
+    color: #666;
+    max-width: 900px;
+    margin: 0 auto 50px;
+    line-height: 1.7;
+}
+
+#portfolio .row {
+    display: flex;
+    justify-content: space-between; /* Membuat kartu sejajar dan memberikan jarak antar kartu */
+    gap: 20px;  /* Memberikan jarak antar kartu */
+    flex-wrap: nowrap; /* Menjaga agar kartu tidak bergeser ke baris berikutnya */
+}
+
+#portfolio .card {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    background-color: white;
+    overflow: hidden;
+    position: relative;
+    flex: 0 0 calc(33.333% - 20px); /* Membuat setiap kartu memiliki lebar sepertiga dari kontainer */
+}
+
+#portfolio .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+}
+
+#portfolio .card-img-top {
+    object-fit: cover;
+    height: 250px;
+    width: 100%;
+    transition: transform 0.3s ease;
+}
+
+#portfolio .card:hover .card-img-top {
+    transform: scale(1.1);
+}
+
+#portfolio .card-body {
+    padding: 30px 20px;
+    text-align: center;
+}
+
+#portfolio .card-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+}
+
+#portfolio .card-text {
+    font-size: 1rem;
+    color: #777;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+#portfolio .card-body .btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: background-color 0.3s, transform 0.3s;
+    letter-spacing: 1px;
+}
+
+#portfolio .card-body .btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Menghapus navigasi slider */
+#portfolio .row {
+    overflow-x: visible; /* Menghilangkan scroll horizontal */
+}
+
+@media (max-width: 992px) {
+    #portfolio .row {
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+}
+
+@media (max-width: 768px) {
+    #portfolio h2 {
+        font-size: 2.5rem;
+    }
+
+    #portfolio p {
+        font-size: 1rem;
+    }
+
+    #portfolio .card-body .btn {
+        padding: 10px 20px;
+    }
+
+    #portfolio .row {
+        flex-direction: column; /* Menyusun kartu secara vertikal pada layar lebih kecil */
+        align-items: center;
+    }
+
+    #portfolio .card {
+        flex: 0 0 100%; /* Membuat kartu mengisi penuh lebar pada layar kecil */
+    }
+}
+
+/* Tombol untuk menuju ke halaman portfolio lengkap */
+#portfolio .btn {
+    background-color: #007bff; /* Warna latar belakang biru */
+    color: #fff; /* Warna teks putih */
+    padding: 15px 30px; /* Ukuran padding yang lebih besar untuk tombol */
+    border-radius: 50px; /* Membuat tombol bulat dengan sudut melengkung */
+    font-weight: 600; /* Menebalkan teks tombol */
+    font-size: 1.1rem; /* Ukuran font tombol */
+    text-transform: uppercase; /* Membuat teks menjadi kapital semua */
+    letter-spacing: 2px; /* Memberikan jarak antar huruf */
+    border: 2px solid #007bff; /* Membuat border dengan warna yang sama dengan tombol */
+    transition: all 0.3s ease; /* Efek transisi halus */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Bayangan halus untuk kedalaman */
+}
+
+#portfolio .btn:hover {
+    background-color: #0056b3; /* Warna latar belakang biru lebih gelap saat hover */
+    border-color: #0056b3; /* Mengubah border menjadi lebih gelap saat hover */
+    transform: translateY(-5px); /* Mengangkat tombol sedikit saat hover */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15); /* Menambahkan bayangan lebih besar saat hover */
+}
+
+#portfolio .btn:focus {
+    outline: none; /* Menghilangkan outline default saat tombol difokuskan */
+    box-shadow: 0 0 0 4px rgba(0, 123, 255, 0.4); /* Menambahkan efek fokus dengan warna biru */
+}
+
+@media (max-width: 768px) {
+    #portfolio .btn {
+        padding: 12px 25px; /* Mengurangi padding pada perangkat lebih kecil */
+        font-size: 1rem; /* Menyesuaikan ukuran font tombol di perangkat kecil */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Bagian Layanan Saya */
+#layanan {
+    padding: 60px 0;
+    background-color: #f8f9fa;
+}
+
+#layanan h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+#layanan p {
+    font-size: 1.2rem;
+    color: #777;
+    max-width: 800px;
+    margin: 0 auto 40px;
+    line-height: 1.6;
+}
+
+#layanan .row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+#layanan .card {
+    border: none;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#layanan .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+#layanan .card-img-top {
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    object-fit: cover;
+    height: 250px;
+    width: 100%;
+}
+
+#layanan .card-body {
+    padding: 25px;
+    text-align: center;
+}
+
+#layanan .card-title {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+#layanan .card-text {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+#layanan .card-body .btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: 600;
+    transition: background-color 0.3s;
+    text-transform: uppercase;
+}
+
+#layanan .card-body .btn:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 992px) {
+    #layanan .row {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 768px) {
+    #layanan h2 {
+        font-size: 2rem;
+    }
+
+    #layanan p {
+        font-size: 1.1rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+/* Styling untuk bagian kontak */
+#contact {
+    background-color: #f8f9fa;
+    padding: 30px 20px; /* Mengurangi padding atas dan bawah */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: -40px; /* Mengurangi jarak dari atas */
+}
+
+/* Membuat background bulat untuk teks dan tombol */
+.circle-bg {
+    background-color: #ffffff;
+    border-radius: 50%;
+    border: 5px solid #f4b400;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    margin-right: -20px; /* Menambahkan margin sedikit ke kiri */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan untuk kesan kedalaman */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-top: -30px; /* Menurunkan sedikit elemen ini */
+}
+
+.circle-bg:hover {
+    transform: scale(1.05); /* Efek zoom saat hover */
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2); /* Meningkatkan bayangan saat hover */
+}
+
+/* Styling untuk tombol WhatsApp */
+.btn-warning {
+    background-color: #f4b400;
+    color: white;
+    font-size: 1.2rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 20px; /* Menambahkan jarak sedikit antara tombol dan teks */
+}
+
+.btn-warning i {
+    margin-right: 10px;
+}
+
+.btn-warning:hover {
+    background-color: #e1a500; /* Warna tombol sedikit lebih gelap saat hover */
+    transform: translateY(-5px); /* Efek mengangkat tombol sedikit saat hover */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan pada tombol saat hover */
+}
+
+/* Membuat background bulat untuk foto */
+.circle-photo {
+    background-color: #ffffff;
+    border-radius: 50%;
+    border: 5px solid #f4b400;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    margin-left: -20px; /* Menambahkan margin sedikit ke kanan */
+    transform: translateY(50px); /* Geser gambar sedikit ke bawah */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan untuk foto */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-top: -20px; /* Mengurangi jarak atas foto */
+}
+
+.circle-photo:hover {
+    transform: translateY(0px) scale(1.05); /* Efek zoom pada foto saat hover */
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2); /* Meningkatkan bayangan saat hover */
+}
+
+/* Styling untuk foto dalam lingkaran */
+.circle-photo img {
+    border-radius: 50%; /* Membuat gambar berbentuk lingkaran */
+    width: 100%; /* Menyesuaikan lebar gambar agar memenuhi lingkaran */
+    height: 100%; /* Menyesuaikan tinggi gambar agar memenuhi lingkaran */
+    object-fit: cover; /* Memastikan gambar tetap terjaga proporsinya dan mengisi seluruh lingkaran */
+}
+
+/* Styling untuk header */
+h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    background: linear-gradient(45deg, #4caf50, #81c784); /* Gradasi hijau cerah */
+    -webkit-background-clip: text; /* Memastikan gradasi hanya diterapkan pada teks */
+    color: transparent; /* Membuat teks menjadi transparan sehingga gradasi terlihat */
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2); /* Menambahkan bayangan pada teks agar lebih pop out */
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #333;
+}
+
+/* Membuat layout responsif */
+@media (max-width: 768px) {
+    .circle-bg {
+        width: 300px;
+        height: 300px;
+        margin-right: -10px; /* Mengurangi margin pada perangkat kecil */
+    }
+
+    .circle-photo {
+        width: 300px;
+        height: 300px;
+        margin-left: -10px; /* Mengurangi margin pada perangkat kecil */
+    }
+
+    .btn-warning {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+}
